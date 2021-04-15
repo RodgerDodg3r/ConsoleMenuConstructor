@@ -15,7 +15,9 @@ class MenuConstructor
         { 
             if (index == option_selected)
             {
-                Console.WriteLine(o + "         <==");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(o);
+                Console.ResetColor();
             }
             else {
                 Console.WriteLine(o);
