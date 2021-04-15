@@ -36,4 +36,4 @@ class example
 ```
 
 ## Screenshot
-[alt text](https://i.imgur.com/yAirN5z.png)
+(https://i.imgur.com/yAirN5z.png)
