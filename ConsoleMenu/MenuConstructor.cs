@@ -16,6 +16,7 @@ class MenuConstructor
             if (index == option_selected)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
+                Console.BackgroundColor = ConsoleColor.White;
                 Console.WriteLine(o);
                 Console.ResetColor();
             }
