@@ -5,14 +5,9 @@ using System.Text;
 
 class MenuConstructor
 {
-
-
-     static int user_selected_option = 0;
-    
-
+    static int user_selected_option = 0;
     public static void Display(string[] options, string menu_name, int option_selected = 0)
     {
-
         int index = 0;
         Console.Clear();
         Console.WriteLine($"==========================[ {menu_name} ]==========================");
@@ -29,7 +24,6 @@ class MenuConstructor
 
         }
         Console.WriteLine($"==========================[ {menu_name} ]==========================");
-
         ConsoleKey key = Console.ReadKey().Key;
         if (key == ConsoleKey.UpArrow)
         {
@@ -53,15 +47,16 @@ class MenuConstructor
             {
                 MenuConstructor.Display(options, menu_name, 0);
             }
-
         }
         else if (key == ConsoleKey.Enter)
         {
             MenuConstructor.user_selected_option = option_selected + 1;
         }
 
-
-
+        else 
+        {
+            MenuConstructor.Display(options, menu_name, option_selected);
+        }
     }
     public static int GetUserSelectedOption()
     {
